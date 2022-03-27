@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front end Test</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="bg-brand py-31px">
+      <div class="container mx-auto px-r-4">
+        <ul class="nav-responsive nav-list">
+          <div class="lg-hide hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </div>
+          <li class="text-white f-f-g text-31px cursor-pointer">YOUR LOGO</li>
+
+          <ul class="nav-list nav-list-responsive">
+            <li class="text-white cursor-pointer nav-item f-f-gr g-transition">
+              How it works
+            </li>
+            <li
+              class="text-white cursor-pointer nav-item f-f-gr g-transition ml-41px"
+            >
+              Franchise list
+            </li>
+            <li
+              class="text-white cursor-pointer nav-item f-f-gr g-transition ml-41px"
+            >
+              Franchising guide
+            </li>
+            <li class="ml-36px">
+              <button
+                class="rounded-5px bg-green cursor-pointer g-transition text-white nav-btn f-f-g"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="bg-brand overflow-hidden section-1">
+      <div class="flex items-center justify-between relative">
+        <div class="container mx-auto px-r-4 w-full">
+          <div class="hero-responsive relative z-100">
+            <div class="max-w-508px w-full">
+              <h1 class="text-white f-f-g text-50px heading">
+                Lorem ipsum dolor sit amet consectetur
+              </h1>
+              <button class="hero-btn1 bg-blue f-f-g text-white">
+                Lorem ipsum
+              </button>
+              <p
+                class="text-white text-24px mt-37px l-34px mobile-text-center hero-responsive-txt"
+              >
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit, sed do eiusmod.
+              </p>
+              <button
+                class="hero-btn2 bg-green w-full rounded-full text-white flex items-center justify-center text-24px font-bold cursor-pointer"
+              >
+                See the best franchises
+                <img
+                  class="ml-12px"
+                  alt="play icon"
+                  src="./assets/vectors/Polygon 6.svg"
+                />
+              </button>
+            </div>
+            <img
+              src="./assets/images/heromobile.png"
+              alt="hero mobile image"
+              class="heromobile"
+            />
+          </div>
+        </div>
+        <img
+          alt="bg"
+          src="./assets/images/Image 45.png"
+          class="absolute hero-img xxs-hide"
+        />
+      </div>
+    </div>
+
+    <!-- check section -->
+
+    <div class="bg-blue-light section-2">
+      <div
+        class="container mx-auto px-r-4 flex-col items-center justify-center check-section"
+      >
+        <h2 class="section-2-heading text-brand f-f-g">Lorem Ipsum Dolor</h2>
+        <ul class="check-list font-bold">
+          <li class="flex items-center">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Aliquam tincidunt mauris eu risus.
+            </p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Morbi in sem quis dui placerat ornare, Pellentesque.
+            </p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">Nunc dignissim risus id metus.</p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Integer vitae libero ac risus egestas placerat.
+            </p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Vivamus vestibulum ntulla nec ante.
+            </p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Praesent placerat risus quis eros.
+            </p>
+          </li>
+          <li class="flex items-center mt-30px">
+            <img
+              src="./assets/vectors/check (1).svg"
+              class="checkIcon"
+              alt="check icon"
+            />
+
+            <p class="checkList-section-2">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- view section -->
+
+    <div class="bg-brand view-section flex-col items-center justify-center">
+      <div class="mx-auto container px-r-4">
+        <h3 class="view-section-heading f-f-g text-white text-center">
+          Lorem ipsum dolor sit amet <br />
+          adipiscing elit. Donec odio. Quisque volutpat mattis
+        </h3>
+        <p class="view-section-para">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          Quisque volutpat mattis eros. Nullam malesuada erat ut. Suspendisse
+          urna nibh, viverra non, semper suscipit
+        </p>
+
+        <div class="xxs-hide">
+          <div class="grid">
+            <div class="flex-col items-center justify-center">
+              <img alt="amazon hall" src="./assets/images/amazon.png" />
+              <p class="text-20px text-white mt-14px">Amazon Mall</p>
+            </div>
+            <div class="flex-col items-center justify-center">
+              <img alt="amazon hall" src="./assets/images/centaurus.png" />
+              <p class="text-20px text-white mt-14px">Centaurus Mall</p>
+            </div>
+            <div class="flex-col items-center justify-center">
+              <img alt="amazon hall" src="./assets/images/giga.png" />
+              <p class="text-20px text-white mt-14px">Giga Mall</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg-hide">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper text-white">
+              <!-- Slides -->
+              <div class="swiper-slide flex-col items-center justify-center">
+                <img alt="amazon hall" src="./assets/images/swiperimage.png" />
+                <p class="text-20px text-white mt-14px">Amazon Mall</p>
+              </div>
+              <div class="swiper-slide flex-col items-center justify-center">
+                <img alt="amazon hall" src="./assets/images/swiperimage.png" />
+                <p class="text-20px text-white mt-14px">Centaurus Mall</p>
+              </div>
+              <div class="swiper-slide flex-col items-center justify-center">
+                <img alt="amazon hall" src="./assets/images/swiperimage.png" />
+                <p class="text-20px text-white mt-14px">Giga Mall</p>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <img
+              style="margin-top: -42px; margin-left: -10px"
+              class="swiper-button-prev"
+              src="./assets/images/left.svg"
+              alt="left button"
+            />
+            <img
+              style="margin-top: -42px; margin-right: -10px"
+              class="swiper-button-next"
+              src="./assets/images/right.svg"
+              alt="right button"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 4 -->
+    <div class="bg-blue section-4">
+      <div class="flex items-center justify-between relative">
+        <div class="mx-auto container px-r-4 w-full">
+          <div class="section-4-left">
+            <h4 class="text-green text-50px l-70px section-4-heading f-f-g">
+              Lorem <br /><span class="text-white">Ipsum Dolor</span>
+            </h4>
+            <p class="text-white section-4-para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Integer enim neque volutpat ac tincidunt vitae semper. Ullamcorper
+              eget nulla facilisi etiam dignissim diam quis enim. Enim eu turpis
+              egestas pretium aenean pharetra magna ac. Enim nunc faucibus a
+              pellentesque sit amet porttitor eget dolor. <br />
+              <br />
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+              eget mi proin sed libero enim. Etiam sit amet nisl purus in mollis
+              nunc sed id. Placerat in egestas erat imperdiet. Etiam tempor orci
+              eu lobortis elementum nibh tellus molestie nunc. Felis eget velit
+              aliquet sagittis id consectetur.
+              <br />
+              <br />
+              <span class="cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+
+        <img
+          alt="faq"
+          src="./assets/images/faq.png"
+          class="absolute right-20 xxs-hide"
+        />
+        <img
+          alt="team"
+          src="./assets/images/team.png"
+          class="absolute right-0 xxs-hide"
+        />
+      </div>
+    </div>
+
+    <!-- section 5 -->
+    <div class="section-5">
+      <div class="mx-auto container">
+        <div class="grid-section-5">
+          <div class="flex-col items-center justify-center">
+            <img class="" alt="gird images" src="./assets/images/s51.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center">
+            <img class="" alt="gird images" src="./assets/images/s52.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center">
+            <img class="" alt="gird images" src="./assets/images/s53.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center">
+            <img class="" alt="gird images" src="./assets/images/s54.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center mt-33px">
+            <img class="" alt="gird images" src="./assets/images/s55.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center">
+            <img class="" alt="gird images" src="./assets/images/s56.png" />
+            <p class="grid-section5-heading font-bold">Lorem Ipsum Dolor</p>
+            <p class="text-center grid-section5-para text-brand">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 6 -->
+    <div class="section-6">
+      <div class="mx-auto container px-r-4">
+        <p class="text-50px text-white f-f-g text-center">
+          Lorem Ipsum Dolor Sit
+        </p>
+        <div class="flex items-center justify-center">
+          <div>
+            <div class="section-6-row mt-51px">
+              <div class="max-w-705px">
+                <p class="text-27px f-f-g text-green first-section-6">STEP 1</p>
+                <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                <p class="text-white text-21px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+              <div
+                class="section-6-blob flex flex-col items-center justify-center rounded-full"
+              >
+                <img
+                  class="section-6-vector"
+                  alt=""
+                  src="./assets/vectors/Group 1373.svg"
+                />
+              </div>
+            </div>
+
+            <div class="flex-col items-start-center">
+              <img
+                class="section-6-vector1"
+                alt=""
+                src="./assets/vectors/next.svg"
+              />
+              <div class="section-6-row">
+                <div class="max-w-705px">
+                  <p class="text-27px f-f-g text-green mt-30px">STEP 2</p>
+                  <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                  <p class="text-white text-21px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.
+                  </p>
+                </div>
+                <div
+                  class="section-6-blob flex flex-col items-center justify-center rounded-full"
+                >
+                  <img
+                    class="section-6-vector"
+                    alt=""
+                    src="./assets/vectors/question-mark.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-col items-start-center">
+              <img
+                class="section-6-vector1"
+                alt=""
+                src="./assets/vectors/next.svg"
+              />
+              <div class="section-6-row">
+                <div class="max-w-705px">
+                  <p class="text-27px f-f-g text-green mt-30px">STEP 3</p>
+                  <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                  <p class="text-white text-21px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.
+                  </p>
+                </div>
+                <div
+                  class="section-6-blob flex flex-col items-center justify-center rounded-full"
+                >
+                  <img
+                    class="section-6-vector"
+                    alt=""
+                    src="./assets/vectors/share (1).svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-col items-start-center">
+              <img
+                class="section-6-vector1"
+                alt=""
+                src="./assets/vectors/next.svg"
+              />
+              <div class="section-6-row">
+                <div class="max-w-705px">
+                  <p class="text-27px f-f-g text-green mt-30px">STEP 4</p>
+                  <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                  <p class="text-white text-21px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.
+                  </p>
+                </div>
+                <div
+                  class="section-6-blob flex flex-col items-center justify-center rounded-full"
+                >
+                  <img
+                    class="section-6-vector"
+                    alt=""
+                    src="./assets/vectors/placeholder.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-col items-start-center">
+              <img
+                class="section-6-vector1"
+                alt=""
+                src="./assets/vectors/next.svg"
+              />
+              <div class="section-6-row">
+                <div class="max-w-705px">
+                  <p class="text-27px f-f-g text-green mt-30px">STEP 5</p>
+                  <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                  <p class="text-white text-21px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.
+                  </p>
+                </div>
+                <div
+                  class="section-6-blob flex flex-col items-center justify-center rounded-full"
+                >
+                  <img
+                    class="section-6-vector"
+                    alt=""
+                    src="./assets/vectors/share.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-col items-start-center">
+              <img
+                class="section-6-vector1"
+                alt=""
+                src="./assets/vectors/next.svg"
+              />
+              <div class="section-6-row">
+                <div class="max-w-705px">
+                  <p class="text-27px f-f-g text-green mt-30px">STEP 6</p>
+                  <p class="section-6-text text-white f-f-g">Lorem Ipsum</p>
+                  <p class="text-white text-21px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.
+                  </p>
+                </div>
+                <div
+                  class="section-6-blob flex flex-col items-center justify-center rounded-full"
+                >
+                  <img
+                    class="section-6-vector"
+                    alt=""
+                    src="./assets/vectors/chat (2).svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-end justify-end">
+              <div class="w-full max-w-783px">
+                <p class="text-white text-50px f-f-g text-center xxs-hide">
+                  Lorem Ipsum Dolor Sit ...
+                </p>
+                <p class="text-white text-50px f-f-g text-center lg:hide">
+                  Lorem Ipsum <br />
+                  Dolor Sit ...
+                </p>
+                <p class="text-white text-21px text-center mt-30px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 7 -->
+
+    <div class="section-7">
+      <div class="mx-auto container px-r-4">
+        <div class="max-w-708px">
+          <p class="text-50px l-65px text-white mobile-text-center f-f-g">
+            Lorem Ipsum Dolor Sit Amet <br />
+            <span class="text-green"> LOREM IPSUM </span>
+          </p>
+          <p class="text-white section-7-para text-21px mobile-text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+            Suspendisse urna nibh, viverra non, semper suscipit, posuere a,
+            pede.
+            <br />
+            <br />
+
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+            Suspendisse urna nibh, viverra.
+          </p>
+
+          <button
+            class="section-7-btn text-white font-bold text-24px bg-green w-full cursor-pointer g-transition"
+          >
+            Schedule a call today!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 8 -->
+    <div class="section-8">
+      <div class="mx-auto container">
+        <p class="text-white text-50px f-f-g l-49px text-center">
+          Success Stories
+        </p>
+        <p class="text-white text-24px l-49px text-center mt-18px">
+          Ez-Franchise Client Testimonials
+        </p>
+      </div>
+    </div>
+    <div class="section-8-grid">
+      <div
+        class="w-full flex items-center justify-center bg-green section-8-content"
+      >
+        <div class="max-w-300px flex-col items-center justify-center">
+          <img alt="quoute" src="./assets/vectors/quote.svg" />
+          <p class="text-center section-8-content-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Integer
+            enim.
+          </p>
+          <img
+            src="./assets/images/s81.png"
+            class="cursor-pointer"
+            alt="play"
+          />
+          <p class="section-8-heading text-27px text-white font-bold">
+            Lorem Ipsum
+          </p>
+          <p class="text-21px text-white">Lorem ipsum dolor sit</p>
+        </div>
+      </div>
+      <div
+        class="w-full flex items-center justify-center bg-brand section-8-content"
+      >
+        <div class="max-w-300px flex-col items-center justify-center">
+          <img alt="quoute" src="./assets/vectors/quote.svg" />
+          <p class="text-center section-8-content-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Integer
+            enim.
+          </p>
+          <img
+            src="./assets/images/s82.png"
+            class="cursor-pointer"
+            alt="play"
+          />
+          <p class="section-8-heading text-27px text-white font-bold">
+            Lorem Ipsum
+          </p>
+          <p class="text-21px text-white">Lorem ipsum dolor sit</p>
+        </div>
+      </div>
+      <div
+        class="w-full flex items-center justify-center bg-blue section-8-content"
+      >
+        <div class="max-w-300px flex-col items-center justify-center">
+          <img alt="quoute" src="./assets/vectors/quote.svg" />
+          <p class="text-center section-8-content-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Integer
+            enim.
+          </p>
+          <img
+            src="./assets/images/s83.png"
+            class="cursor-pointer"
+            alt="play"
+          />
+          <p class="section-8-heading text-27px text-white font-bold">
+            Lorem Ipsum
+          </p>
+          <p class="text-21px text-white">Lorem ipsum dolor sit</p>
+        </div>
+      </div>
+      <div
+        class="w-full flex items-center justify-center bg-green section-8-content"
+      >
+        <div class="max-w-300px flex-col items-center justify-center">
+          <img alt="quoute" src="./assets/vectors/quote.svg" />
+          <p class="text-center section-8-content-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Integer
+            enim.
+          </p>
+          <img
+            src="./assets/images/s84.png"
+            alt="play"
+            class="cursor-pointer"
+          />
+          <p class="section-8-heading text-27px text-white font-bold">
+            Lorem Ipsum
+          </p>
+          <p class="text-21px text-white">Lorem ipsum dolor sit</p>
+        </div>
+      </div>
+      <div
+        class="w-full flex items-center justify-center bg-blue section-8-content"
+      >
+        <div class="max-w-300px flex-col items-center justify-center">
+          <img alt="quoute" src="./assets/vectors/quote.svg" />
+          <p class="text-center section-8-content-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Integer
+            enim.
+          </p>
+          <img
+            src="./assets/images/s85.png"
+            class="cursor-pointer"
+            alt="play"
+          />
+          <p class="section-8-heading text-27px text-white font-bold">
+            Lorem Ipsum
+          </p>
+          <p class="text-21px text-white">Lorem ipsum dolor sit</p>
+        </div>
+      </div>
+    </div>
+    <!-- section 9 -->
+    <div class="section-9">
+      <div class="mx-auto container px-r-4 flex items-center justify-center">
+        <div
+          class="flex-col items-center justify-center section-9-content w-full"
+        >
+          <p class="text-50px text-white l-40px f-f-g mobile-text-center">
+            Lorem Ipsum Dolor Sit Amet
+          </p>
+          <img alt="logo" src="./assets/images/OBJECTS.png" class="object" />
+          <p class="text-white text-21px l-30px desktop-text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis
+            Suspendisse urna nibh.<br /><br />
+            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+            mauris sit amet orci. Aenean dignissim pellentesque felis.<br /><br />
+            Morbi in sem quis dui placerat ornare pellentesque
+          </p>
+          <button
+            class="mt-37px section-7-btn text-white font-bold text-24px bg-green w-full cursor-pointer g-transition"
+          >
+            Schedule a call today!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 10 -->
+    <div class="section-10 mx-auto container">
+      <div class="section-10-main">
+        <img class="xxs-hide" src="./assets/images/s10.png" alt="section 10" />
+        <div class="section-10-right">
+          <p class="text-24px l-49px mobile-text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+          <p
+            class="text-50px mt-18px f-f-g l-65px mobile-text-center section-10-heading"
+          >
+            Lorem Ipsum <br />
+            Dolor Sit Amet Consectetuer!
+          </p>
+          <button
+            class="mt-50px section-7-btn text-white font-bold text-24px bg-green w-full cursor-pointer g-transition"
+          >
+            Schedule a call today!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="mx-auto container items-end-center">
+        <div class="xxs-hide">
+          <div class="flex items-start justify-end">
+            <div class="items-end justify-end flex-col">
+              <div class="flex items-center">
+                <div class="items-end justify-end flex-col">
+                  <p class="text-white f-f-g">Get in touch</p>
+                  <div class="mt-20px">
+                    <div
+                      class="flex items-center text-white footer-link cursor-pointer g-transition"
+                    >
+                      <p>loremipsumpk@gmail.com</p>
+                      <svg
+                        class="ml-14px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14.722"
+                        height="10.516"
+                        viewBox="0 0 14.722 10.516"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: currentColor;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(0.526 0)">
+                          <path
+                            class="a"
+                            d="M30.737,68.267H17.067L23.9,73.9l6.912-5.614A.476.476,0,0,0,30.737,68.267Z"
+                            transform="translate(-17.067 -68.267)"
+                          />
+                        </g>
+                        <g transform="translate(0 0.928)">
+                          <path
+                            class="a"
+                            d="M7.693,104.195a.526.526,0,0,1-.666,0L0,98.406v9.061a.526.526,0,0,0,.526.526H14.2a.526.526,0,0,0,.526-.526V98.484Z"
+                            transform="translate(0 -98.406)"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-10px items-end justify-end flex-col">
+                <div
+                  class="flex items-center footer-link cursor-pointer g-transition text-white"
+                >
+                  <p>Floor 3, One Expressway, Gulberg Greens, Islamabad</p>
+                  <svg
+                    class="ml-14px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11.425"
+                    height="15.773"
+                    viewBox="0 0 11.425 15.773"
+                  >
+                    <defs>
+                      <style>
+                        .a {
+                          fill: currentColor;
+                        }
+                      </style>
+                    </defs>
+                    <g transform="translate(0)">
+                      <g transform="translate(0)">
+                        <path
+                          class="a"
+                          d="M76.285,0a5.719,5.719,0,0,0-5.712,5.712c0,3.909,5.112,9.648,5.33,9.89a.515.515,0,0,0,.765,0C76.886,15.36,82,9.621,82,5.712A5.719,5.719,0,0,0,76.285,0Zm0,8.587a2.874,2.874,0,1,1,2.874-2.874A2.877,2.877,0,0,1,76.285,8.587Z"
+                          transform="translate(-70.573)"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-end justify-end flex-col ml-160px">
+              <div class="flex items-center">
+                <div class="items-end justify-end flex-col">
+                  <p class="text-white f-f-g">Follow us</p>
+                  <div class="mt-20px">
+                    <div class="flex items-center">
+                      <img
+                        class="cursor-pointer g-transition icon"
+                        alt="icon"
+                        src="./assets/vectors/facebook.svg"
+                      />
+                      <img
+                        class="ml-14px cursor-pointer g-transition icon"
+                        alt="icon"
+                        src="./assets/images/instagram (1).png"
+                      />
+                      <img
+                        class="ml-14px cursor-pointer g-transition icon"
+                        alt="icon"
+                        src="./assets/vectors/twitter.svg"
+                      />
+                      <img
+                        class="ml-14px cursor-pointer g-transition icon"
+                        alt="icon"
+                        src="./assets/vectors/youtube.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <a
+            href="#"
+            class="footer-link cursor-pointer g-transition text-white no-underline"
+          >
+            <p>Contact</p>
+          </a>
+          <a
+            href="#"
+            class="footer-link ml-75px cursor-pointer g-transition text-white no-underline"
+          >
+            <p>Disclaimer</p>
+          </a>
+          <a
+            href="#"
+            class="footer-link ml-75px cursor-pointer g-transition text-white no-underline"
+          >
+            <p>Privacy policy</p>
+          </a>
+          <p class="ml-75px g-transition text-white lg-hide">
+            @2020 Lorem Ipsum, Pvt. Ltd.
+          </p>
+          <p class="ml-75px g-transition text-white lg-hide">
+            All rights reserved
+          </p>
+          <p class="ml-75px g-transition text-white xxs-hide">
+            @2020 Lorem Ipsum, Pvt. Ltd. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
