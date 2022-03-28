@@ -18,6 +18,8 @@
     />
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module">
       const swiper = new Swiper(".swiper", {
         // Optional parameters
@@ -34,10 +36,14 @@
   </head>
   <body>
     <!-- navigation bar -->
-    <nav class="bg-brand py-31px">
+    <nav data-aos-duration="1000" data-aos="fade-down" class="bg-brand py-31px">
       <div class="container mx-auto px-r-4">
         <ul class="nav-responsive nav-list">
-          <div class="lg-hide hamburger">
+          <div
+            onclick="enableSidebar()"
+            id="hamburger"
+            class="lg-hide hamburger"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-menu-2"
@@ -83,11 +89,62 @@
         </ul>
       </div>
     </nav>
+
+    <div id="sidebar" class="sidebar left-full g-transition">
+      <div class="flex justify-between w-full p-8">
+        <a href="/" class="no-underline nav-list">
+          <li class="text-white f-f-g text-18px cursor-pointer">
+            YOUR LOGO
+          </li> </a
+        ><button
+          onclick="disablesidebar()"
+          id="cross"
+          style="border: 0; background-color: transparent !important"
+          class="focus:outline-none text-white cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M15 1L1 15"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M1 1L15 15"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <ul style="padding-top: 20px" class="flex-col items-start nav-list">
+        <li class="text-white cursor-pointer f-f-gr mt-30px">How it works</li>
+        <li class="text-white cursor-pointer f-f-gr mt-30px">Franchise list</li>
+        <li class="text-white cursor-pointer f-f-gr mt-30px">
+          Franchising guide
+        </li>
+        <li class="mt-30px">
+          <button
+            class="rounded-5px bg-green cursor-pointer g-transition text-white nav-btn f-f-g"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+    </div>
     <!-- hero section -->
     <div class="bg-brand overflow-hidden section-1">
       <div class="flex items-center justify-between relative">
         <div class="container mx-auto px-r-4 w-full">
-          <div class="hero-responsive relative z-100">
+          <div data-aos-duration="1000" data-aos="fade-left" class="hero-responsive relative z-100">
             <div class="max-w-508px w-full">
               <h1 class="text-white f-f-g text-50px heading">
                 Lorem ipsum dolor sit amet consectetur
@@ -102,7 +159,7 @@
                 consectetur adipiscing elit, sed do eiusmod.
               </p>
               <button
-                class="hero-btn2 bg-green w-full rounded-full text-white flex items-center justify-center text-24px font-bold cursor-pointer"
+                class="g-transition hero-btn2 bg-green w-full rounded-full text-white flex items-center justify-center text-24px font-bold cursor-pointer"
               >
                 See the best franchises
                 <img
@@ -119,7 +176,7 @@
             />
           </div>
         </div>
-        <img
+        <img data-aos-duration="1000" data-aos="fade-right"
           alt="bg"
           src="./assets/images/Image 45.png"
           class="absolute hero-img xxs-hide"
@@ -129,7 +186,7 @@
 
     <!-- check section -->
 
-    <div class="bg-blue-light section-2">
+    <div data-aos-duration="1000" data-aos="fade-down" class="bg-blue-light section-2">
       <div
         class="container mx-auto px-r-4 flex-col items-center justify-center check-section"
       >
@@ -239,15 +296,15 @@
 
         <div class="xxs-hide">
           <div class="grid">
-            <div class="flex-col items-center justify-center">
+            <div data-aos-duration="1000" data-aos="fade-left" class="flex-col items-center justify-center">
               <img alt="amazon hall" src="./assets/images/amazon.png" />
               <p class="text-20px text-white mt-14px">Amazon Mall</p>
             </div>
-            <div class="flex-col items-center justify-center">
+            <div data-aos-duration="1000" data-aos="fade-down" class="flex-col items-center justify-center">
               <img alt="amazon hall" src="./assets/images/centaurus.png" />
               <p class="text-20px text-white mt-14px">Centaurus Mall</p>
             </div>
-            <div class="flex-col items-center justify-center">
+            <div data-aos-duration="1000" data-aos="fade-right" class="flex-col items-center justify-center">
               <img alt="amazon hall" src="./assets/images/giga.png" />
               <p class="text-20px text-white mt-14px">Giga Mall</p>
             </div>
@@ -295,7 +352,7 @@
     <div class="bg-blue section-4">
       <div class="flex items-center justify-between relative">
         <div class="mx-auto container px-r-4 w-full">
-          <div class="section-4-left">
+          <div data-aos-duration="1000" data-aos="fade-left" class="section-4-left">
             <h4 class="text-green text-50px l-70px section-4-heading f-f-g">
               Lorem <br /><span class="text-white">Ipsum Dolor</span>
             </h4>
@@ -321,21 +378,21 @@
           </div>
         </div>
 
-        <img
+        <img data-aos-duration="1000" data-aos="fade-right"
           alt="faq"
           src="./assets/images/faq.png"
-          class="absolute right-20 xxs-hide"
+          class="absolute right-20 xxs-hide section-4-img"
         />
-        <img
+        <img data-aos-duration="1000" data-aos="fade-right"
           alt="team"
           src="./assets/images/team.png"
-          class="absolute right-0 xxs-hide"
+          class="absolute right-0 xxs-hide section-4-img"
         />
       </div>
     </div>
 
     <!-- section 5 -->
-    <div class="section-5">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-5">
       <div class="mx-auto container">
         <div class="grid-section-5">
           <div class="flex-col items-center justify-center">
@@ -391,7 +448,7 @@
     </div>
 
     <!-- section 6 -->
-    <div class="section-6">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-6">
       <div class="mx-auto container px-r-4">
         <p class="text-50px text-white f-f-g text-center">
           Lorem Ipsum Dolor Sit
@@ -558,7 +615,7 @@
                 <p class="text-white text-50px f-f-g text-center xxs-hide">
                   Lorem Ipsum Dolor Sit ...
                 </p>
-                <p class="text-white text-50px f-f-g text-center lg:hide">
+                <p class="text-white text-50px f-f-g text-center lg-hide">
                   Lorem Ipsum <br />
                   Dolor Sit ...
                 </p>
@@ -577,7 +634,7 @@
 
     <!-- section 7 -->
 
-    <div class="section-7">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-7">
       <div class="mx-auto container px-r-4">
         <div class="max-w-708px">
           <p class="text-50px l-65px text-white mobile-text-center f-f-g">
@@ -607,7 +664,7 @@
     </div>
 
     <!-- section 8 -->
-    <div class="section-8">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-8">
       <div class="mx-auto container">
         <p class="text-white text-50px f-f-g l-49px text-center">
           Success Stories
@@ -617,7 +674,7 @@
         </p>
       </div>
     </div>
-    <div class="section-8-grid">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-8-grid">
       <div
         class="w-full flex items-center justify-center bg-green section-8-content"
       >
@@ -725,7 +782,7 @@
       </div>
     </div>
     <!-- section 9 -->
-    <div class="section-9">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-9">
       <div class="mx-auto container px-r-4 flex items-center justify-center">
         <div
           class="flex-col items-center justify-center section-9-content w-full"
@@ -752,7 +809,7 @@
     </div>
 
     <!-- section 10 -->
-    <div class="section-10 mx-auto container">
+    <div data-aos-duration="1000" data-aos="fade-down" class="section-10 mx-auto container">
       <div class="section-10-main">
         <img class="xxs-hide" src="./assets/images/s10.png" alt="section 10" />
         <div class="section-10-right">
@@ -775,7 +832,7 @@
     </div>
 
     <!-- footer -->
-    <div class="footer">
+    <div data-aos-duration="1000" data-aos="fade-up" class="footer">
       <div class="mx-auto container items-end-center">
         <div class="xxs-hide">
           <div class="flex items-start justify-end">
@@ -920,5 +977,21 @@
         </div>
       </div>
     </div>
+    
+    
+    <script>
+      AOS.init();
+
+      const sidebar = document.getElementById("sidebar");
+
+      function enableSidebar() {
+        sidebar.classList.add("left-0");
+        sidebar.classList.remove("left-full");
+      }
+      function disablesidebar() {
+        sidebar.classList.remove("left-0");
+        sidebar.classList.add("left-full");
+      }
+    </script>
   </body>
 </html>

@@ -9,17 +9,38 @@
   width: 320px;
   height: 285px;
 }
+
+/* sidebar css */
+.left-0 {
+  left: 0;
+}
+.left-full {
+  left: -100%;
+}
+
 .z-100 {
   z-index: 100;
 }
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  min-height: 100vh;
+  z-index: 400;
+  top: 0;
+  background: var(--blue-brand);
+  min-width: 230px;
+  padding: 20px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0;
+  
 }
 @font-face {
   font-family: "font family gilory extrabold";
@@ -341,9 +362,10 @@ nav {
   height: 46px;
   border: 0;
   margin-top: 57px;
+  box-shadow: 0px 8px 8px #23ce6b80;
 }
 .hero-btn2:hover {
-  background-color: yellowgreen;
+  box-shadow: 18px 20px 20px #23ce6b80;
 }
 .hero-img {
   right: 0;
@@ -422,6 +444,9 @@ nav {
   font-size: 16px;
   line-height: 22px;
   margin-top: 40px;
+}
+.section-4-img {
+  width: 30%;
 }
 
 .section-4-left {
@@ -573,11 +598,12 @@ nav {
 }
 
 .section-8-content-para {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 45px;
-  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
   color: white;
+  padding: 0px 20px;
 }
 .section-8-heading {
   line-height: 49px;
@@ -1023,6 +1049,9 @@ p {
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .section-4-img {
+    width: 20%;
+  }
 }
 
 /* for normal laptops and screens before bigger screens */
@@ -1033,12 +1062,18 @@ p {
   .px-r-4 {
     padding: 0px 0px;
   }
+  .section-4-img {
+    width: 25%;
+  }
 }
 
 /* for bigger displays and moving on */
 @media (min-width: 1342px) {
   .container {
     max-width: 1342px;
+  }
+  .section-4-img {
+    width: 25%;
   }
 }
 
@@ -1049,6 +1084,24 @@ p {
   .hero-img {
     right: 0;
     top: -113px;
+    width: auto;
+  }
+  .section-8-content-para {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 45px;
+    margin-bottom: 17px;
+    padding: 0px 0px;
+
+    color: white;
+  }
+  .section-4-img {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section-4-img {
     width: auto;
   }
 }
